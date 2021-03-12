@@ -1,3 +1,6 @@
+import CardList from "./components/cardList";
+import cards from "./components/test/testData";
+
 function App() {
   return (
     <div className="min-h-screen bg-black-100">
@@ -5,7 +8,7 @@ function App() {
         <div className="max-2-7x1 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex">
-              <div className="flex-shrink-0 flex itsems-center">
+              <div className="flex-shrink-0 flex items-center">
                 <p>Flashcards</p>
               </div>
             </div>
@@ -23,7 +26,7 @@ function App() {
         <main>
           <div className="max-w-7x1 mx-auto sm:px-6 lg:px-8">
             <div className="px-4 py-8 sm:px-0">
-              <div className="border-4 border-dashed border-gray-200 rounded-lg h-96"></div>
+              <CardList cards={cards} />
             </div>
           </div>
         </main>
